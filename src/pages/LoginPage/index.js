@@ -32,7 +32,7 @@ function LoginPage() {
               className="mr-image"
               alt=""
             />
-            <h3>Hoş geldiniz...</h3>
+            <h3></h3>
           </div>
         </div>
         <div className="la-right">

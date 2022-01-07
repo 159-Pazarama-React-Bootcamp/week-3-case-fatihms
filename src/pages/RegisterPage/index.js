@@ -32,7 +32,7 @@ function RegisterPage() {
               className="mr-image"
               alt=""
             />
-            <h3>Hoş geldiniz...</h3>
+            <h3></h3>
           </div>
         </div>
         <div className="ra-right">

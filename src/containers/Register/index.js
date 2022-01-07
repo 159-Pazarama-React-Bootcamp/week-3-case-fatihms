@@ -102,6 +102,7 @@ function Register() {
       </div>
       <div className="r-button-container">
         <CommonButton onClick={handleSubmit}>Sign up</CommonButton>
+        <p style={{ marginTop: "10px", color: "red" }}>{error}</p>
       </div>
     </div>
   );

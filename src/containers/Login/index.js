@@ -82,6 +82,7 @@ function Login() {
       </div>
       <div className="l-button-container">
         <CommonButton onClick={handleSubmit}>Sign in</CommonButton>
+        <p style={{ marginTop: "10px", color: "red" }}>{error}</p>
       </div>
       <p className="l-alternative-login-text">or continue with</p>
       <div className="l-social-media-buttons-container">
