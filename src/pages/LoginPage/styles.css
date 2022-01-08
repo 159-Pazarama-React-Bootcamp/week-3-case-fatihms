@@ -48,10 +48,13 @@
 }
 
 .middle-image {
+  width: 100%;
+}
+.l-mi-img {
   position: absolute;
   top: 25%;
-  left: 10%;
-  width: 100%;
+  left: 0%;
+  width: 72%;
 }
 
 .middle-left {
@@ -66,4 +69,87 @@
   position: absolute;
   top: 15%;
   right: 10%;
+}
+
+@media (min-width: 1440px) and (max-width: 1679px) {
+  .login-area-container {
+    width: 90%;
+  }
+
+  .middle-image {
+    margin: auto;
+  }
+  .l-mi-img {
+    top: 15%;
+    left: 0%;
+    width: 82%;
+  }
+  .middle-left {
+    width: 100%;
+  }
+  .middle-right {
+    width: 100%;
+  }
+  .mr-image {
+    top: 0;
+    left: 60%;
+    top: 20%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .login-area-container {
+    width: 90%;
+  }
+
+  .middle-image {
+    margin: auto;
+  }
+  .l-mi-img {
+    top: 15%;
+    left: 0%;
+    width: 82%;
+  }
+  .middle-left {
+    width: 100%;
+  }
+  .middle-right {
+    width: 100%;
+  }
+  .mr-image {
+    top: 0;
+    left: 60%;
+    top: 20%;
+    height: 180px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .login-area-container {
+    width: 90%;
+  }
+
+  .middle-image {
+    margin: auto;
+  }
+  .l-mi-img {
+    top: 15%;
+    left: 0%;
+    width: 82%;
+  }
+  .middle-left {
+    width: 100%;
+  }
+  .middle-right {
+    width: 100%;
+  }
+  .mr-image {
+    top: 0;
+    left: 60%;
+    top: 20%;
+    height: 150px;
+    margin: auto;
+  }
 }

@@ -19,9 +19,10 @@ function LoginPage() {
         </div>
         <div className="la-middle">
           <div className="middle-image">
-            <ImageMaskStlye
+            <img
               src="https://i.hizliresim.com/gio6x6n.png"
               alt="the-grand-budapest-hotel"
+              className="l-mi-img"
             />
           </div>
           <div className="middle-left"></div>
