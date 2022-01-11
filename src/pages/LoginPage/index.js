@@ -18,19 +18,19 @@ function LoginPage() {
           <Login />
         </div>
         <div className="la-middle">
-          <div className="middle-image">
+          <div className="la-middle-image">
             <img
               src="https://i.hizliresim.com/gio6x6n.png"
               alt="the-grand-budapest-hotel"
-              className="l-mi-img"
+              className="la-mi-img"
             />
           </div>
-          <div className="middle-left"></div>
-          <div className="middle-right">
+          <div className="la-middle-left"></div>
+          <div className="la-middle-right">
             <img
               src="https://i.hizliresim.com/9dlvat9.png"
               height={200}
-              className="mr-image"
+              className="la-mr-image"
               alt=""
             />
             <h3></h3>

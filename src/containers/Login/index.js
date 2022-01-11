@@ -42,7 +42,7 @@ function Login() {
       if (user.password === password) {
         setFullName(user.name);
         localStorage.setItem("isAuthenticated", true);
-        navigate(`/home/${user.name}`);
+        navigate(`/home/`);
       } else {
         setError("Şifre yanlış");
       }

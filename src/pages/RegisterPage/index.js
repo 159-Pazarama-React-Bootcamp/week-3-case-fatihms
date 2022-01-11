@@ -18,25 +18,26 @@ function RegisterPage() {
           <Register />
         </div>
         <div className="ra-middle">
-          <div className="middle-image">
-            <ImageMaskStlye
+          <div className="ra-middle-image">
+            <img
               src="https://i.hizliresim.com/gio6x6n.png"
               alt="the-grand-budapest-hotel"
+              className="ra-mi-img"
             />
           </div>
-          <div className="middle-left"></div>
-          <div className="middle-right">
+          <div className="ra-middle-left"></div>
+          <div className="ra-middle-right">
             <img
               src="https://i.hizliresim.com/9dlvat9.png"
               height={200}
-              className="mr-image"
+              className="ra-mr-image"
               alt=""
             />
             <h3></h3>
           </div>
         </div>
         <div className="ra-right">
-          <div className="la-r-icon">
+          <div className="ra-r-icon">
             <AiFillFacebook size={48} color="#592B56" className="social-icon" />
             <AiFillTwitterSquare
               size={48}

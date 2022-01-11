@@ -34,6 +34,8 @@
   flex-direction: column;
   align-items: end;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   padding-right: 22px;
 }
 
@@ -43,29 +45,32 @@
 
 .la-middle {
   width: 30%;
+  height: 100%;
   display: flex;
   position: relative;
 }
 
-.middle-image {
-  width: 100%;
-}
-.l-mi-img {
+.la-middle-image {
   position: absolute;
   top: 25%;
-  left: 0%;
-  width: 72%;
+  left: 10%;
+  width: 100%;
 }
 
-.middle-left {
+.la-mi-img {
+  position: absolute;
+  width: 325px;
+}
+
+.la-middle-left {
   width: 50%;
   background-color: #fbf3e4;
 }
 
-.middle-right {
+.la-middle-right {
   width: 50%;
 }
-.mr-image {
+.la-mr-image {
   position: absolute;
   top: 15%;
   right: 10%;
@@ -75,26 +80,20 @@
   .login-area-container {
     width: 90%;
   }
-
-  .middle-image {
-    margin: auto;
-  }
-  .l-mi-img {
-    top: 15%;
-    left: 0%;
-    width: 82%;
-  }
-  .middle-left {
+  .la-middle-image {
+    position: absolute;
+    top: 29%;
+    left: 10%;
     width: 100%;
   }
-  .middle-right {
-    width: 100%;
+  .la-mi-img {
+    position: absolute;
+    width: 300px;
   }
-  .mr-image {
-    top: 0;
-    left: 60%;
-    top: 20%;
-    margin: auto;
+  .la-mr-image {
+    position: absolute;
+    top: 17%;
+    right: 0%;
   }
 }
 
@@ -102,27 +101,22 @@
   .login-area-container {
     width: 90%;
   }
+  .la-middle-image {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 100%;
+  }
+  .la-mi-img {
+    position: absolute;
+    width: 280px;
+  }
 
-  .middle-image {
-    margin: auto;
-  }
-  .l-mi-img {
-    top: 15%;
-    left: 0%;
-    width: 82%;
-  }
-  .middle-left {
-    width: 100%;
-  }
-  .middle-right {
-    width: 100%;
-  }
-  .mr-image {
-    top: 0;
-    left: 60%;
-    top: 20%;
+  .la-mr-image {
+    position: absolute;
+    top: 14%;
+    right: -5%;
     height: 180px;
-    margin: auto;
   }
 }
 
@@ -130,26 +124,22 @@
   .login-area-container {
     width: 90%;
   }
+  .la-middle-image {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+  }
+  .la-mi-img {
+    position: absolute;
+    width: 260px;
+  }
 
-  .middle-image {
-    margin: auto;
-  }
-  .l-mi-img {
-    top: 15%;
-    left: 0%;
-    width: 82%;
-  }
-  .middle-left {
-    width: 100%;
-  }
-  .middle-right {
-    width: 100%;
-  }
-  .mr-image {
-    top: 0;
-    left: 60%;
-    top: 20%;
-    height: 150px;
-    margin: auto;
+  .la-mr-image {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    top: 22%;
+    right: -12%;
   }
 }
