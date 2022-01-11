@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./styles.css";
 
 import axios from "axios";
+
+import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
@@ -11,6 +13,8 @@ import CommonButton from "../../components/CommonButton";
 import { FcGoogle } from "react-icons/fc";
 import { BsGoogle, BsGithub, BsFacebook } from "react-icons/bs";
 
+import UserContext from "../../context/UserContext";
+
 import API from "../../config/api";
 
 function Login() {
@@ -19,6 +23,10 @@ function Login() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const { fullName, setFullName } = useContext(UserContext);
+
+  let navigate = useNavigate();
 
   const loadUsers = async () => {
     setLoading(false);
@@ -32,8 +40,9 @@ function Login() {
     const user = users.find((user) => user.email === email);
     if (user) {
       if (user.password === password) {
-        localStorage.setItem("user", user.name);
-        window.location.href = "/home";
+        setFullName(user.name);
+        localStorage.setItem("isAuthenticated", true);
+        navigate(`/home/${user.name}`);
       } else {
         setError("Şifre yanlış");
       }

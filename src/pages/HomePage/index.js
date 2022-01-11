@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./styles.css";
 
+import UserContext from "../../context/UserContext";
+
 function HomePage() {
-  const [fullName, setFullName] = useState("");
+  const { fullName, setFullName } = useContext(UserContext);
 
   const exitSite = () => {
-    localStorage.removeItem("user");
+    localStorage.clear();
     window.location.href = "/";
   };
 
-  useEffect(() => {
-    setFullName(localStorage.getItem("user"));
-  }, []);
   return (
     <div className="home-page-container">
       <h1 className="hp-h1">Merhaba, {fullName}</h1>

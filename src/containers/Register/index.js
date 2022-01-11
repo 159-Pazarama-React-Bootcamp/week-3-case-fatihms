@@ -5,6 +5,7 @@ import axios from "axios";
 
 import PrimaryInput from "../../components/PrimaryInput";
 import CommonButton from "../../components/CommonButton";
+
 import API from "../../config/api";
 
 function Register() {

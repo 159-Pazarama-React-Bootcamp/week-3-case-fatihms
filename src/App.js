@@ -7,17 +7,24 @@ import HomePage from "./pages/HomePage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { UserProvider } from "./context/UserContext";
+import ProtectedRoute from "./components/ProtectedRoute";
+
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HelloPage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="register" element={<RegisterPage />} />
-          <Route path="home" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
+      <UserProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HelloPage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="register" element={<RegisterPage />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="home" element={<HomePage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </UserProvider>
     </>
   );
 }
